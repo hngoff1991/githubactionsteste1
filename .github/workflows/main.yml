@@ -15,7 +15,7 @@ jobs:
         ado_token: '${{ secrets.ADO_PERSONAL_ACCESS_TOKEN }}'   
         github_token: '${{ secrets.GH_TOKEN }}'    
         ado_organization: 'HenriqueitAzurePipelines'
-        ado_project: 'Testes Pipelines com YAML'
+        ado_project: 'Modulo 3 - Pipelines com YAML'
         ado_wit: 'Task' 
         ado_new_state: 'To Do'
         ado_active_state: 'In Progress'
