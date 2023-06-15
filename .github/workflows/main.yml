@@ -10,13 +10,15 @@ jobs:
   alert:
     runs-on: ubuntu-latest
     steps:
-    - uses: danhellem/github-actions-pr-to-work-item@master
-      env:
+    - uses: colindembovsky/az-create-work-item@v1.0.0
+      with:
         ado_token: '${{ secrets.ADO_PERSONAL_ACCESS_TOKEN }}'   
         github_token: '${{ secrets.GH_TOKEN }}'    
         ado_organization: 'HenriqueitAzurePipelines'
-        ado_project: 'Modulo 3 - Pipelines com YAML'
+        ado_project: 'Testes Pipelines com YAML'
         ado_wit: 'Task' 
         ado_new_state: 'To Do'
         ado_active_state: 'In Progress'
         ado_close_state: 'Done'
+        description: '<div>A Pull Request was created <a href="https://github.com/${{ env.repository }}/pulls/${{ env.prNum }}">here</a>.</div>
+
